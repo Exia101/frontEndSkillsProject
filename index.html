@@ -2,14 +2,25 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>my page</title>
+    <title>Instagram Finder</title>
 
+    <link rel="stylesheet" href="style.scss">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="java.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA86swi7AyXp8WHQlQvTeOMpAAcA1ihrWI&libraries=places"></script>
+
   </head>
   <body>
-    <section>
-      
-    </section>
+    <h1>Instagram finder:</h1>
+      <section class="search">
+        <input type="text" name="name" placeholder="Enter your Postcode">
+        <button type="button" class="button" name="button">Click me</button>
+        <div class="render">
 
+        </div>
+        <div id="map" style="width:100%;height:500px"></div>
+      </section>
   </body>
 </html>

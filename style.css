@@ -1,3 +1,16 @@
 h1 {
-  color: red;
+  font-family: copperplate;
+  color: royalblue;
+  text-align: center;
 }
+
+body {
+  background-image: url("http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2012/10/Earth.jpg"); }
+
+.search {
+
+  display: block;
+  margin-left: 42.5%;
+}
+
+/*# sourceMappingURL=style.css.map */
