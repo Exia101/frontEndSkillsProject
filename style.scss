@@ -8,9 +8,15 @@ h1 {
 }
 
 body {
-  background-image: url("https://thelistlove.files.wordpress.com/2014/03/26.jpg");
+  background-image: url("http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2012/10/Earth.jpg");
 }
 
 .search {
-  width: 50%;
+  margin-left: 42.5%;
+}
+
+.render {
+  background-color: $primary-color;
+  text-align: center;
+
 }
