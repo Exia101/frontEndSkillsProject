@@ -40,7 +40,6 @@
        "tags": $('#input').val(),
        "format": "json"
      }
-      console.log("listening");
     $.ajax({
       url: 'https://api.flickr.com/services/feeds/photos_public.gne',
       dataType: 'jsonp',
