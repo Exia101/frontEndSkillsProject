@@ -1,4 +1,6 @@
-
+// $('#button').click(function(){
+//   console.log("this is gayaayayyayayay");
+// })
 //   function showResult(result) {
 //     document.getElementById('latitude').value = result.geometry.location.lat();
 //     document.getElementById('longitude').value = result.geometry.location.lng();
@@ -32,13 +34,29 @@
     });
   };
 
-  $("button").click(function(){
-
+  $("#button").click(function(){
+    $('#images').empty();
+    var params = {
+       "tags": $('#input').val(),
+       "format": "json"
+     }
+      console.log("listening");
     $.ajax({
       url: 'https://api.flickr.com/services/feeds/photos_public.gne',
       dataType: 'jsonp',
-      data: { "tags": "", "format": "json" }
+      data: params,
+      success : {
+        "tags" : $('#input').val('')
+      }
     });
+    function jsonFlickrFeed(json) {
+      console.log(json);
+
+      $.each(json.items, function(i, item) {
+        $("<img />").attr("src", item.media.m).appendTo("#images");
+      });
+    };
+
   })
 
 
