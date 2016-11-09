@@ -29,6 +29,7 @@
 
 
   function jsonFlickrFeed(json) {
+    
     $.each(json.items, function(i, item) {
       $("<img />").attr("src", item.media.m).appendTo("#images");
     });
@@ -48,34 +49,10 @@
         "tags" : $('#input').val('')
       }
     });
-    function jsonFlickrFeed(json) {
-      console.log(json);
-
-      $.each(json.items, function(i, item) {
-        $("<img />").attr("src", item.media.m).appendTo("#images");
-      });
-    };
-
   })
 
 
-// function jsonFlickrFeed(json) {
-//   console.log(json);
-//
-//   $.each(json.items, function(i, item) {
-//     $("<img />").attr("src", item.media.m).appendTo("#images");
-//   });
-// };
-//
-// function handleButtonClick() {
-//   $("button").remove();
-//
-//   $.ajax({
-//     url: 'https://api.flickr.com/services/feeds/photos_public.gne',
-//     dataType: 'jsonp',
-//     data: { "tags": "kitten", "format": "json" }
-//   });
-// }
+
 
 
 // flickr_key: 9bcc690e1a00968109fe8d9b8f69e65f
