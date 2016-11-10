@@ -29,7 +29,7 @@
 
 
   function jsonFlickrFeed(json) {
-    
+
     $.each(json.items, function(i, item) {
       $("<img />").attr("src", item.media.m).appendTo("#images");
     });
@@ -50,6 +50,8 @@
       }
     });
   })
+
+
 
 
 
