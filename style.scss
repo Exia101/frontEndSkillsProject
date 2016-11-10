@@ -8,9 +8,9 @@ h1 {
 }
 
 body {
-  background-image: url("http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2012/10/Earth.jpg");
+  background-image: url("http://giphy.com/gifs/sol-star-4LNS6BhIxOpfW/fullscreen");
 }
-
+// http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2012/10/Earth.jpg
 .search {
   margin-left: 42.5%;
 }
@@ -19,4 +19,33 @@ body {
   background-color: $primary-color;
   text-align: center;
 
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  margin: 30px 30px;
+  opacity: 0.5;
+
+}
+
+img:hover {
+    opacity: 1.0;
+}
+
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
 }
